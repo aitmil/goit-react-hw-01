@@ -1,10 +1,14 @@
 import css from "./FriendList.module.css";
-import data from "./friends.json";
+import FriendListItem from "../FriendListItem/FriendListItem";
 
-export default function FriendList() {
+export default function FriendList({ friends }) {
   return (
-    <>
-      <div></div>
-    </>
+    <ul>
+      {friends.map((friend) => (
+        <li key={friend.id}>
+          <FriendListItem friend={friend} />
+        </li>
+      ))}
+    </ul>
   );
 }
