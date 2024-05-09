@@ -1,0 +1,22 @@
+.img {
+  width: 82px;
+  height: 82px;
+  margin-bottom: 12px;
+}
+
+.name {
+  margin-bottom: 6px;
+  font-style: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.online {
+  text-align: center;
+  color: green;
+}
+
+.offline {
+  text-align: center;
+  color: red;
+}
