@@ -3,18 +3,18 @@ import Transaction from "../Transaction/Transaction";
 
 export default function TransactionHistory({ items }) {
   return (
-    <table>
-      <thead>
+    <table className={css.table}>
+      <thead className={css.thead}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.th}>Type</th>
+          <th className={css.th}>Amount</th>
+          <th className={css.th}>Currency</th>
         </tr>
       </thead>
 
-      <tbody key={items.id}>
+      <tbody className={css.tbody} key={items.id}>
         {items.map((item) => (
-          <tr key={item.id}>
+          <tr className={css.tr} key={item.id}>
             <Transaction item={item} />
           </tr>
         ))}
