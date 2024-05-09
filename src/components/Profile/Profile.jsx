@@ -6,8 +6,8 @@ export default function Profile({ name, tag, location, image, stats }) {
       <div className={css.card}>
         <img className={css.img} src={image} alt="User avatar" />
         <p className={css.name}>{name}</p>
-        <p className={css.info}>{tag}</p>
-        <p className={css.info}>{location}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
       <ul className={css.list}>

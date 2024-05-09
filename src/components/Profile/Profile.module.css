@@ -1,4 +1,70 @@
 .box {
-  margin: 0 auto 48px;
-  width: 320px;
+  margin: 0 auto 36px;
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 18px 0 30px;
+  background-color: #e8e8e8;
+  border-bottom: 3px solid #666668;
+}
+
+.list {
+  background-color: #b3b3b3;
+  display: flex;
+}
+
+.item {
+  padding: 24px 47px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.item:not(:last-child) {
+  border-right: 3px solid #666668;
+}
+
+.text {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.number {
+  font-style: bold;
+  font-size: 36px;
+}
+
+.img {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #404042;
+}
+
+.name,
+.tag,
+.location {
+  color: #666668;
+  text-align: center;
+  font-size: 30px;
+}
+
+.name {
+  margin: 30px 0;
+  font-style: bold;
+  color: black;
+}
+
+.tag {
+  margin-bottom: 20px;
+}
+
+.tag::before {
+  content: "@";
 }
